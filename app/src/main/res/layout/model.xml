@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgModel"
+        android:src="@drawable/i"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nama Kantor"
+        android:id="@+id/namaModel"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgModel"
+        android:layout_toEndOf="@+id/imgModel"
+        android:layout_marginTop="23dp"
+        android:textColor="#033402" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="deskripsi...."
+        android:id="@+id/deskModel"
+        android:layout_below="@+id/namaModel"
+        android:layout_toRightOf="@+id/imgModel"
+        android:layout_toEndOf="@+id/imgModel"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/imgModel"
+>
+
+    </View>
+
+</RelativeLayout>
