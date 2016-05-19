@@ -1,5 +1,4 @@
 package id.ac.unsyiah.elektro.mobile.pservices;
-
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -10,11 +9,9 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 
-/**
- * Created by Alchusuvie on 5/13/2016.
- */
 public class Adapter extends BaseAdapter implements Filterable {
     Context c;
     ArrayList<Kantor> kantors;
@@ -38,7 +35,7 @@ public class Adapter extends BaseAdapter implements Filterable {
     }
 
     @Override
-    public long getItemId(int position) {
+    public long getItemId(int pos) {
         return 0;
     }
 
@@ -51,7 +48,7 @@ public class Adapter extends BaseAdapter implements Filterable {
             convertView=inflater.inflate(R.layout.model,parent,false);
         }
         //tampilan
-        ImageView img= (ImageView) convertView.findViewById(R.id.imageView);
+        ImageView img= (ImageView) convertView.findViewById(R.id.imgModel);
         TextView tv = (TextView) convertView.findViewById(R.id.namaModel);
         TextView tv2 = (TextView) convertView.findViewById(R.id.deskModel);
 
@@ -67,24 +64,17 @@ public class Adapter extends BaseAdapter implements Filterable {
                 OpenDetail(pos);
             }
         });
-
         return convertView;
     }
 
-    //Open Detail
-    private void OpenDetail (int pos){
-        //  if(kantors.get(pos).getNama().equals("polisi"))
-        //{
-        Intent pesan =new Intent(c, DetailActivity.class);
-        pesan.putExtra("pos",pos);
-        c.startActivity(pesan);
+    private void OpenDetail (int pos) {
+       // if (kantors.get(pos).getNama().equals("polisi")) {
+            Intent pesan = new Intent(c, DetailActivity.class);
+           // pesan.putExtra("pos", pos);
+            c.startActivity(pesan);
+            //Open Detail
         //}
-        //else{
-        //  Toast.makeText(c,"Error",Toast.LENGTH_LONG).show();
-        //}
-
     }
-
     @Override
     public Filter getFilter() {
         if(filter==null){

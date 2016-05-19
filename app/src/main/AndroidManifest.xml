@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".KantorActivity"></activity>
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>

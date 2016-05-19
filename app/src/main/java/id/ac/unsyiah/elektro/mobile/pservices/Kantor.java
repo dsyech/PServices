@@ -9,7 +9,7 @@ public class Kantor {
     private int img;
     private String desk;
 
-    public Kantor (String nama, int img,String desk ){
+    public Kantor (String nama, int img, String desk){
         this.nama=nama;
         this.img=img;
         this.desk=desk;
@@ -30,6 +30,7 @@ public class Kantor {
     public void setImg(int img) {
         this.img = img;
     }
+
 
     public String getDesk() {
         return desk;
