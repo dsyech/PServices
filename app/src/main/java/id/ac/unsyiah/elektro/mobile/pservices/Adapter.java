@@ -58,23 +58,24 @@ public class Adapter extends BaseAdapter implements Filterable {
         tv2.setText(kantors.get(pos).getDesk());
 
         //itemClick
-        convertView.setOnClickListener(new View.OnClickListener() {
+      /*  convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 OpenDetail(pos);
             }
-        });
+        }); */
         return convertView;
     }
 
+    /*
     private void OpenDetail (int pos) {
-       // if (kantors.get(pos).getNama().equals("polisi")) {
-            Intent pesan = new Intent(c, DetailActivity.class);
-           // pesan.putExtra("pos", pos);
-            c.startActivity(pesan);
-            //Open Detail
-        //}
-    }
+            Intent next = new Intent(c, DetailActivity.class);
+           next.putExtra("pos", pos);
+            c.startActivity(next);
+
+
+    }*/
+
     @Override
     public Filter getFilter() {
         if(filter==null){

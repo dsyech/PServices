@@ -4,13 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="id.ac.unsyiah.elektro.mobile.pservices.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#c3c2c2"
+        android:background="#e2e2e2"
         android:paddingTop="10dp"
         android:paddingBottom="10dp">
 
@@ -29,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Gunakan Dengan Bijak dan Benar. Pilih Instansi :"
+            android:text="Pilih Daerah dan Instansi :"
             android:id="@+id/textView3"
             android:gravity="center"
             android:typeface="normal"
@@ -37,18 +40,32 @@
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true" />
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:spinnerMode="dropdown"
+            android:entries="@array/kota_kab"
+            android:gravity="center|center_vertical|center_horizontal" />
+
     </RelativeLayout>
 
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="3"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#ffffff"
+        android:paddingTop="10dp">
 
         <ImageView
             android:layout_width="90dp"
