@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">PServices</string>
+
+    <string-array name="kota_kab">
+        <item>Banda Aceh</item>
+        <item>Aceh Besar</item>
+        <item>Sabang</item>
+        <item>Aceh Barat</item>
+        <item>Aceh Barat Daya</item>
+        <item>Aceh Jaya</item>
+        <item>Aceh Selatan</item>
+        <item>Aceh Singkil</item>
+        <item>Aceh Tamiang</item>
+        <item>Aceh Tengah</item>
+        <item>Aceh Tenggara</item>
+        <item>Aceh Timur</item>
+        <item>Aceh Utara</item>
+        <item>Bener Meriah</item>
+        <item>Bireuen</item>
+        <item>Gayo Lues</item>
+        <item>Nagan Raya</item>
+        <item>Pidie</item>
+        <item>Pidie Jaya</item>
+        <item>Simeulue</item>
+        <item>Langsa</item>
+        <item>Lhokseumawe</item>
+        <item>Subulussalam</item>
+    </string-array>
+    <!--BANDA ACEH-->
+    <string-array name="namaRumahSakitBandaAceh">
+        <item>RSUD DR. Zainoel Abidin</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
 </resources>

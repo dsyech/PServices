@@ -53,10 +53,10 @@
         android:id="@+id/btnWeb"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/btnweb"
-        android:paddingTop="2dp"
-        android:paddingBottom="2dp"
+        android:paddingBottom="0dp"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
+        android:paddingRight="10dp"
+        android:paddingTop="0dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -64,8 +64,8 @@
         android:id="@+id/btnTel"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/btntelepon"
-        android:paddingBottom="2dp"
-        android:paddingTop="2dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp" />
 
@@ -76,9 +76,9 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/btnsms"
         android:paddingLeft="10dp"
-        android:paddingTop="2dp"
+        android:paddingTop="0dp"
         android:paddingRight="10dp"
-        android:paddingBottom="2dp" />
+        android:paddingBottom="0dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -87,9 +87,9 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/btnemail"
         android:paddingLeft="10dp"
-        android:paddingTop="2dp"
+        android:paddingTop="0dp"
         android:paddingRight="10dp"
-        android:paddingBottom="2dp" />
+        android:paddingBottom="0dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/btnceklokasi"
         android:paddingLeft="10dp"
-        android:paddingTop="2dp"
+        android:paddingTop="0dp"
         android:paddingRight="10dp"
         android:paddingBottom="2dp" />
 
