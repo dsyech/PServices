@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                             String[] desk = {"Jl. Tgk Daud Beureueh, NO. 108 B. Aceh", "Jl. T. Hamzah Bendahara Banda Aceh", "Jl. Dr.T.Syarief Thayeb,No.25 Banda Aceh"};
                             String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh"};
                             int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:085359101995","smsto:085359101948","smsto:085359101996"};
+                            String[]sms ={"smsto:085359101995","smsto:085359101948","smsto:085359101995"};
                             String[]mail ={"mailto:dsyech@gmail.com","mailto:dsyech@gmail.com","mailto:dsyech@gmail.com"};
 
                             double[] lat = {5.579462, 5.564446, 5.565996};
