@@ -38,17 +38,45 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
-                            String[] desk = {"Jl. Tgk Daud Beureueh, NO. 108 B. Aceh", "Jl. T. Hamzah Bendahara Banda Aceh", "Jl. Dr.T.Syarief Thayeb,No.25 Banda Aceh"};
-                            String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh"};
-                            int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:085359101995","smsto:085359101948","smsto:085359101995"};
-                            String[]mail ={"mailto:dsyech@gmail.com","mailto:dsyech@gmail.com","mailto:dsyech@gmail.com"};
+                            String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh", " RS Malahayati",
+                                    "RSIA Harapan Bunda", "RS Teuku Fakinah", "RSU Meuraxa", "RS Ibu dan Anak Propinsi NAD", "RS Permata Hati", "Rumkit Bhayangkara Banda Aceh"
+                                    , "RS UBUDIYAH BANDA ACEH", "RS Meutia", "RS Cempaka Az Zahra Banda Aceh", "RS PRINCE NAYEF BIN ABDUL AZIZ SYIAH KUALA UNIVERS"
+                                    , "RSU Bulan Sabit Merah Indonesia Aceh", "RS NABILA HOSPITAL", "RS PERTAMEDIKA UMMI ROSNATI"};
+                            String[] desk = {"Jl. Tgk Daud Beureueh, NO. 108 B. Aceh", "Jl. T. Hamzah Bendahara Banda Aceh", "Jl. Dr.T.Syarief Thayeb,No.25 Banda Aceh"
+                                    , "Jl. Cut Nyak Dhien No : 498 ,Banda Ace", "Jl. Teuku Umar 181,Banda Aceh", "Jl. Jend.Sudirman 27-29,Banda Aceh", "Jl. Soekarno Hatta Km.2 Mibo Banda Aceh"
+                                    , "Jl. Prof.A.Madjid Ibrahim I, no. 3 Banda Aceh", "Jl. Sultan Iskandar Muda No.217,Banda Aceh", "Jl. Cut Nyak Dhien No. 23, Lamteumen Barat Banda Aceh"
+                                    , "Jln. T. Nyak Arief No.17-24 Jeulingke", "Jl. Cut Meutia No. 55", "Jln. Pocut Baren, 36-40", "Jl. Lingkar Kampus", "Jl. Sultan Malikul Saleh No. 17 Lamlagang, Kec. Banda Raya"
+                                    , "JL. STA. MAHMUDSYAH N0 9 BANDA ACEH", "Jl. Sekolah No. 5 Gampoeng Ateuk Pahlawan, Kecamatan Baiturahman, Kota Banda Aceh 23241"};
 
-                            double[] lat = {5.579462, 5.564446, 5.565996};
-                            double []lang={95.348918, 95.325893, 95.336772};
+                            int[] gambar = {R.drawable.rsudza, R.drawable.a, R.drawable.a, R.drawable.rsmala, R.drawable.rshb, R.drawable.a, R.drawable.a,
+                                    R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a,
+                                    R.drawable.a, R.drawable.a, R.drawable.a};
+                            String[]sms ={"smsto:", "smsto:", "smsto:", "smsto:", "smsto:",
+                                    "smsto:", "smsto:", "smsto:", "smsto:", "smsto:",
+                                    "smsto:", "smsto:", "smsto:", "smsto:", "smsto:", "smsto:",
+                                    "smsto:"};
+                            String[]mail ={"mailto:rsudza@acehprov.go.id", "mailto:rumahsakitim@yahoo.com", "mailto:rsjaceh2011@gmail.com",
+                                    "mailto:rumahsakitmalahayati@yahoo.co.id", "mailto:rsharapanbunda181@gmail.com", "mailto:teungkufakinah.hospital@yahoo.com", "mailto:rsum@bandaacehkota.go.id",
+                                    "mailto:rsia@acehprov.go.id", "mailto:-", "mailto:bhayangkara_banda_aceh@yahoo.co.id", "mailto:ubudiyah_hospital@yahoo.com",
+                                    "mailto:-", "mailto:rsu_azzahra@yahoo.com", "mailto:-", "mailto:deydifitriady@yahoo.co.id",
+                                    "mailto:-", "mailto:-"};
 
-                            String []web = {"http://m.detik.com","http://vemale.com","http://okezone.com"};
-                            String[]tel = {"tel:085359101995","tel:085359101995","tel:085359101995"};
+                            double[] lat = {5.579462, 5.564446, 5.565996, 5.565996,
+                                    5.565996, 5.565996, 5.565996, 5.565996,
+                                    5.565996, 5.565996, 5.565996, 5.565996,
+                                    5.565996, 5.565996, 5.565996, 5.565996, 5.565996};
+                            double []lang={95.348918, 95.325893, 95.336772, 95.336772,
+                                    95.348918, 95.325893, 95.336772, 95.336772,
+                                    95.348918, 95.325893, 95.336772, 95.336772,
+                                    95.348918, 95.325893, 95.336772, 95.336772,
+                                    95.348918};
+
+                            String []web = {"www.rsuza.acehprov.go.id", "-", "http://rsj.acehprov.go.id", "-", "-", "-", "http://rsum.bandaacehkota.go.id", "rsia.acehprov.go.id"
+                                    , "-", "-", "-", "-", "-", "-", "www.bsmi.or.id", "-", "-"};
+                            String[]tel = {"tel:0651-34562", "tel:065122550", "tel:0651-32020", "0651- 46115"
+                                    , "0651- 48114", "41454", "0651-43097", "0651-637796", "0651-7428872"
+                                    , "0651-41470", "0651-7555750", "0651-33149", "0651-31066", "0651 7412628", "0651-638701"
+                                    , "0651-33555", "0651-35092"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
                             next.putExtra("gambar", gambar);
@@ -67,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
+                            String[] namaKantor = {"Polda Aceh", "Poltabes Banda Aceh", "Polsek Baiturrahman", "Polsek Lueng Bata", "Dirlantas Polda Aceh"};
                             String[] desk = {"Jl. Tgk Daud Beureueh, NO. 108 B. Aceh", "Jl. T. Hamzah Bendahara Banda Aceh", "Jl. Dr.T.Syarief Thayeb,No.25 Banda Aceh"};
-                            String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh"};
                             int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a};
                             String[]sms ={"smsto:085359101995","smsto:085359101948","smsto:085359101996"};
                             String[]mail ={"mailto:dsyech@gmail.com","mailto:dsyech@gmail.com","mailto:dsyech@gmail.com"};
