@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
-                            String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh", " RS Malahayati",
+                            String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh", " RSI Malahayati",
                                     "RSIA Harapan Bunda", "RS Teuku Fakinah", "RSU Meuraxa", "RS Ibu dan Anak Propinsi NAD", "RS Permata Hati", "Rumkit Bhayangkara Banda Aceh"
                                     , "RS UBUDIYAH BANDA ACEH", "RS Meutia", "RS Cempaka Az Zahra Banda Aceh", "RS PRINCE NAYEF BIN ABDUL AZIZ SYIAH KUALA UNIVERS"
                                     , "RSU Bulan Sabit Merah Indonesia Aceh", "RS NABILA HOSPITAL", "RS PERTAMEDIKA UMMI ROSNATI"};
@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
 
                             String []web = {"www.rsuza.acehprov.go.id", "-", "http://rsj.acehprov.go.id", "-", "-", "-", "http://rsum.bandaacehkota.go.id", "rsia.acehprov.go.id"
                                     , "-", "-", "-", "-", "-", "-", "www.bsmi.or.id", "-", "-"};
-                            String[]tel = {"tel:0651-34562", "tel:065122550", "tel:0651-32020", "0651- 46115"
-                                    , "0651- 48114", "41454", "0651-43097", "0651-637796", "0651-7428872"
-                                    , "0651-41470", "0651-7555750", "0651-33149", "0651-31066", "0651 7412628", "0651-638701"
-                                    , "0651-33555", "0651-35092"};
+                            String[]tel = {"tel:0651-34562", "tel:065122550", "tel:065132020", "065146115"
+                                    , "065148114", "065141454", "065143097", "0651637796", "06517428872"
+                                    , "065141470", "06517555750", "065133149", "065131066", "06517412628","0651638701"
+                                    , "065133555", "065135092"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
                             next.putExtra("gambar", gambar);
@@ -95,17 +95,26 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
-                            String[] namaKantor = {"Polda Aceh", "Poltabes Banda Aceh", "Polsek Baiturrahman", "Polsek Lueng Bata", "Dirlantas Polda Aceh"};
-                            String[] desk = {"Jl. Tgk Daud Beureueh, NO. 108 B. Aceh", "Jl. T. Hamzah Bendahara Banda Aceh", "Jl. Dr.T.Syarief Thayeb,No.25 Banda Aceh"};
-                            int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:085359101995","smsto:085359101948","smsto:085359101996"};
-                            String[]mail ={"mailto:dsyech@gmail.com","mailto:dsyech@gmail.com","mailto:dsyech@gmail.com"};
+                            String[] namaKantor = {"Polda Aceh", "Poltabes Banda Aceh","Polsek Meuraxa","Polsek Jaya Baru", "Polsek Banda Raya","Polsek Baiturrahman",
+                                    "Polsek Lueng Bata","Polsek Kuta Alam","Polsek Kuta Raja","Polsek Syiah Kuala","Polsek Ulee Kareng"};
 
-                            double[] lat = {5.579462, 5.564446, 5.565996};
-                            double []lang={95.348918, 95.325893, 95.336772};
+                            String[] desk = {"Jl. Cut Nyak Dien, Aceh", "JL Teungku M. Daud Beureu`eh, No. 71", "Jl. Pantai Ulee Lheue"
+                            ,"Jl. Tengku Abdurrahman","Jl. Tengku Dilhong I","Jl. Lamlagang Baiturrahman, Aceh","Jl. Soekarno-Hatta, Lueng Bata, Kota Banda Aceh, Aceh"
+                            ,"Jl Teungku Diblang, Lampulo Baru (Jl Syiah Kuala)","Jl. Peulanggahan, Kec. Kutaraja, Banda Aceh, Aceh 23231",
+                                    "Jl. Lingkar Kampus, Rukoh, Syiah Kuala, Kota Banda Aceh, Aceh","Jl. Jurong Dagang, Sp. 7, Banda Aceh, Aceh, Indonesia"};
+                            int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a
+                                    , R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a};
+                            String[]sms ={"smsto:08116771010","smsto:","smsto:","smsto","smsto:","smsto:","smsto:","smsto:","smsto:",
+                                    "smsto:","smsto:"};
+                            String[]mail ={"mailto:resus.polda.aceh@gmail.com","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:"
+                                    ,"mailto:","mailto:"};
+
+                            double[] lat = {5.578290, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996};
+                            double []lang={95.348898, 95.325893, 95.336772, 95.325893, 95.336772, 95.325893, 95.336772, 95.325893, 95.336772, 95.325893, 95.336772};
 
                             String []web = {"http://m.detik.com","http://vemale.com","http://okezone.com"};
-                            String[]tel = {"tel:085359101995","tel:085359101995","tel:085359101995"};
+                            String[]tel = {"tel:06517555353","tel:065121353","tel:085359101995","tel:065121353","tel:085359101995","tel:065121353","tel:085359101995"
+                                    ,"tel:065121353","tel:085359101995","tel:065121353","tel:085359101995"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
                             next.putExtra("gambar", gambar);
