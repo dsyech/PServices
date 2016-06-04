@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                                     "Jl. Lingkar Kampus, Rukoh, Syiah Kuala, Kota Banda Aceh, Aceh","Jl. Jurong Dagang, Sp. 7, Banda Aceh, Aceh, Indonesia"};
                             int[] gambar = {R.drawable.poldaaceh, R.drawable.poltabesbandaaceh, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a
                                     , R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:08116771010","smsto:","smsto:","smsto","smsto:","smsto:","smsto:","smsto:","smsto:",
+                            String[]sms ={"smsto:08116771010","smsto:","smsto:","smsto","smsto:","smsto: ","smsto:","smsto:","smsto:",
                                     "smsto:","smsto:"};
                             String[]mail ={"mailto:resus.polda.aceh@gmail.com","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:"
                                     ,"mailto:","mailto:"};
