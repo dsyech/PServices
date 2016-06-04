@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                                     , R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a};
                             String[]sms ={"smsto:08116771010","smsto:","smsto:","smsto","smsto:","smsto: ","smsto:","smsto:","smsto:",
                                     "smsto:","smsto:"};
-                            String[]mail ={"mailto:resus.polda.aceh@gmail.com","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:"
+                            String[]mail ={"mailto:resus.polda.aceh@gmail.com","mailto: ","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:"
                                     ,"mailto:","mailto:"};
 
                             double[] lat = {5.578290, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996};
