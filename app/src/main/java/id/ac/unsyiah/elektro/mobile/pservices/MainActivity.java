@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                             ,"Jl. Tengku Abdurrahman","Jl. Tengku Dilhong I","Jl. Lamlagang Baiturrahman, Aceh","Jl. Soekarno-Hatta, Lueng Bata, Kota Banda Aceh, Aceh"
                             ,"Jl Teungku Diblang, Lampulo Baru (Jl Syiah Kuala)","Jl. Peulanggahan, Kec. Kutaraja, Banda Aceh, Aceh 23231",
                                     "Jl. Lingkar Kampus, Rukoh, Syiah Kuala, Kota Banda Aceh, Aceh","Jl. Jurong Dagang, Sp. 7, Banda Aceh, Aceh, Indonesia"};
-                            int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a
+                            int[] gambar = {R.drawable.poldaaceh, R.drawable.poltabesbandaaceh, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a
                                     , R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a};
                             String[]sms ={"smsto:08116771010","smsto:","smsto:","smsto","smsto:","smsto:","smsto:","smsto:","smsto:",
                                     "smsto:","smsto:"};
