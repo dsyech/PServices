@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override 
+            @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 int kabkot = parent.getSelectedItemPosition();
