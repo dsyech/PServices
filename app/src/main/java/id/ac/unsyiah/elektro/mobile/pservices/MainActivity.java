@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                             next.putExtra("mail",mail);
                             startActivity(next);
                         }
-                    });
+                    }); 
 
                     ImageView pln = (ImageView) findViewById(R.id.pln);
                     pln.setOnClickListener(new View.OnClickListener() {
