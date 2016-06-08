@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
                             String[] namaKantor = {"Kantor PMI Banda Aceh","Kantor Cabang PMI Nanggroe Aceh Darussalam"};
                             String[] desk = {"Jl. Stadion H. Dimoerthala No.2 di Banda Aceh - 23135","JL. Stadion H. Dimoerthala, No.4, Banda Aceh"};
-                            int[] gambar = {R.drawable.a, R.drawable.a};
+                            int[] gambar = {R.drawable.pmi, R.drawable.pmi};
                             String[]sms ={"smsto:-","smsto:-"};
                             String[]mail ={"mailto:-","mailto:-"};
 
