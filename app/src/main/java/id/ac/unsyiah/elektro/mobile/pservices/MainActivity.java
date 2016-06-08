@@ -161,17 +161,17 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
-                            String[] desk = {"Jl. Tgk Daud Beureueh, NO. 108 B. Aceh", "Jl. T. Hamzah Bendahara Banda Aceh", "Jl. Dr.T.Syarief Thayeb,No.25 Banda Aceh"};
-                            String[] namaKantor = {"RSU Dr. Zainoel Abidin", "Rumkit Tk II Iskandar Muda Banda Aceh", "RS Jiwa Banda Aceh"};
-                            int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:085359101995","smsto:085359101948","smsto:085359101996"};
-                            String[]mail ={"mailto:dsyech@gmail.com","mailto:dsyech@gmail.com","mailto:dsyech@gmail.com"};
+                            String[] namaKantor = {"Kantor PMI Banda Aceh","Kantor Cabang PMI Nanggroe Aceh Darussalam"};
+                            String[] desk = {"Jl. Stadion H. Dimoerthala No.2 di Banda Aceh - 23135","JL. Stadion H. Dimoerthala, No.4, Banda Aceh"};
+                            int[] gambar = {R.drawable.a, R.drawable.a};
+                            String[]sms ={"smsto:-","smsto:-"};
+                            String[]mail ={"mailto:-","mailto:-"};
 
-                            double[] lat = {5.579462, 5.564446, 5.565996};
-                            double []lang={95.348918, 95.325893, 95.336772};
+                            double[] lat = {5.563917,  5.563114};
+                            double []lang={95.341517, 95.342899};
 
-                            String []web = {"http://m.detik.com","http://vemale.com","http://okezone.com"};
-                            String[]tel = {"tel:085359101995","tel:085359101995","tel:085359101995"};
+                            String []web = {"http://pmiaceh.or.id/banda-aceh/banda-aceh","http://pmiaceh.or.id"};
+                            String[]tel = {"tel:065123191","tel:065122930"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
                             next.putExtra("gambar", gambar);
