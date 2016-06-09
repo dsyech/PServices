@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                             next.putExtra("mail",mail);
                             startActivity(next);
                         }
-                    }); 
+                    });
 
                     ImageView pln = (ImageView) findViewById(R.id.pln);
                     pln.setOnClickListener(new View.OnClickListener() {
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(View v) {
                             Intent next = new Intent(getApplicationContext(), KantorActivity.class);
                             String[] namaKantor = {"Perusahaan Listrik Negara (PLN). PT Persero - Wilayah Aceh", "PT. PLN (Persero) Area Banda Aceh"};
-                            String[] desk = {"JL. Tengku H.Daud Beureu'eh, No. 172, Lampriet, Banda Aceh, Nanggroe aceh Darussalam, 23124", "Jl. Tentara Pelajar, Merduati, Kuta Raja, Kota Banda Aceh, Aceh"};
+                            String[] desk = {"JL. Tengku H.Daud Beureu'eh, No. 172, Lampriet, Banda Aceh", "Jl. Tentara Pelajar, Merduati, Kuta Raja, Kota Banda Aceh, Aceh"};
                             int[] gambar = {R.drawable.e, R.drawable.e};
                             String[]sms ={"smsto:-","smsto:-"};
                             String[]mail ={"mailto:-","mailto:-"};
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                             double[] lat = {5.567959, 5.556585};
                             double []lang={ 95.339679, 95.314879};
 
-                            String []web = {"http://m.detik.com","http://vemale.com","http://okezone.com"};
+                            String []web = {"-","-"};
                             String[]tel = {"tel:065122188","tel:-"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
