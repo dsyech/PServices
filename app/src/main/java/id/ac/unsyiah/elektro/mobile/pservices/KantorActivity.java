@@ -34,12 +34,7 @@ public class KantorActivity extends AppCompatActivity {
         final String[] namaKantor = next.getStringArrayExtra("namaKantor");
         final int [] gambar = next.getIntArrayExtra("gambar");
         final String[] desk = next.getStringArrayExtra("desk");
-        final String [] sms = next.getStringArrayExtra("sms");
-        final String [] mail = next.getStringArrayExtra("mail");
-        final double [] lat = next.getDoubleArrayExtra("lat");
-        final double [] lang = next.getDoubleArrayExtra("lang");
-        final String [] web = next.getStringArrayExtra("web");
-        final String[]tel = next.getStringArrayExtra("tel");
+
 
         SearchView searchView = (SearchView) findViewById(R.id.searchView);
         ListView listView = (ListView) findViewById(R.id.listView);
@@ -50,17 +45,17 @@ public class KantorActivity extends AppCompatActivity {
 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
+        Kantor kantor=(Kantor)adapter.getItem(pos);
         Intent next = new Intent(getApplicationContext(), DetailActivity.class);
-        next.putExtra("pos",pos);
-        next.putExtra("namaKantor",namaKantor);
-        next.putExtra("desk",desk);
-        next.putExtra("gambar",gambar);
-        next.putExtra("sms",sms);
-        next.putExtra("mail",mail);
-        next.putExtra("lat",lat);
-        next.putExtra("lang",lang);
-        next.putExtra("web",web);
-        next.putExtra("tel",tel);
+        next.putExtra("namaKantor",kantor.getNama());
+        next.putExtra("desk",kantor.getDesk());
+        next.putExtra("gambar",kantor.getImg());
+        next.putExtra("sms",kantor.getSms());
+       next.putExtra("mail",kantor.getMail());
+       next.putExtra("lat",kantor.getLat());
+       next.putExtra("lang",kantor.getLang());
+       next.putExtra("web",kantor.getWeb());
+       next.putExtra("tel",kantor.getTel());
         startActivity(next);
     }
 });
@@ -88,13 +83,19 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         String[] namaKantor = next.getStringArrayExtra("namaKantor");
         int [] gambar = next.getIntArrayExtra("gambar");
         String[] desk = next.getStringArrayExtra("desk");
+        final String [] sms = next.getStringArrayExtra("sms");
+        final String [] mail = next.getStringArrayExtra("mail");
+        final double [] lat = next.getDoubleArrayExtra("lat");
+        final double [] lang = next.getDoubleArrayExtra("lang");
+        final String [] web = next.getStringArrayExtra("web");
+        final String[]tel = next.getStringArrayExtra("tel");
 
         ArrayList<Kantor> kantors = new ArrayList<Kantor>();
         Kantor k;
 
 
         for (int i=0;i<namaKantor.length;i++){
-            k =new Kantor(namaKantor[i], gambar[i], desk[i]);
+            k =new Kantor(namaKantor[i], gambar[i], desk[i],sms[i],mail[i],lat[i],lang[i],web[i],tel[i]);
             kantors.add(k);
         }
         return kantors;

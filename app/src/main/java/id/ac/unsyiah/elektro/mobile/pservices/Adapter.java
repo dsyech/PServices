@@ -57,24 +57,8 @@ public class Adapter extends BaseAdapter implements Filterable {
         tv.setText(kantors.get(pos).getNama());
         tv2.setText(kantors.get(pos).getDesk());
 
-        //itemClick
-      /*  convertView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                OpenDetail(pos);
-            }
-        }); */
         return convertView;
     }
-
-    /*
-    private void OpenDetail (int pos) {
-            Intent next = new Intent(c, DetailActivity.class);
-           next.putExtra("pos", pos);
-            c.startActivity(next);
-
-
-    }*/
 
     @Override
     public Filter getFilter() {
@@ -96,7 +80,8 @@ public class Adapter extends BaseAdapter implements Filterable {
 
                 for(int i=0;i<filterList.size();i++){
                     if (filterList.get(i).getNama().toUpperCase().contains(constraint)){
-                        Kantor k = new Kantor(filterList.get(i).getNama(), filterList.get(i).getImg(),filterList.get(i).getDesk());
+                        Kantor k = new Kantor(filterList.get(i).getNama(), filterList.get(i).getImg(),filterList.get(i).getDesk(), filterList.get(i).getSms(),
+                                filterList.get(i).getMail(),filterList.get(i).getLat(),filterList.get(i).getLang(),filterList.get(i).getWeb(),filterList.get(i).getTel());
                         filters.add(k);
                     }
                 }
