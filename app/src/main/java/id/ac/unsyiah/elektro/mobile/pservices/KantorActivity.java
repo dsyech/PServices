@@ -30,53 +30,47 @@ public class KantorActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.actionbar);
 
-        Intent next = getIntent();
-        final String[] namaKantor = next.getStringArrayExtra("namaKantor");
-        final int [] gambar = next.getIntArrayExtra("gambar");
-        final String[] desk = next.getStringArrayExtra("desk");
-
-
         SearchView searchView = (SearchView) findViewById(R.id.searchView);
         ListView listView = (ListView) findViewById(R.id.listView);
 
         final Adapter adapter = new Adapter(this, getKantors());
         listView.setAdapter(adapter);
 
-listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
-        Kantor kantor=(Kantor)adapter.getItem(pos);
-        Intent next = new Intent(getApplicationContext(), DetailActivity.class);
-        next.putExtra("namaKantor",kantor.getNama());
-        next.putExtra("desk",kantor.getDesk());
-        next.putExtra("gambar",kantor.getImg());
-        next.putExtra("sms",kantor.getSms());
-       next.putExtra("mail",kantor.getMail());
-       next.putExtra("lat",kantor.getLat());
-       next.putExtra("lang",kantor.getLang());
-       next.putExtra("web",kantor.getWeb());
-       next.putExtra("tel",kantor.getTel());
-        startActivity(next);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
+                Kantor kantor=(Kantor)adapter.getItem(pos);
+                Intent next = new Intent(getApplicationContext(), DetailActivity.class);
+                next.putExtra("namaKantor",kantor.getNama());
+                next.putExtra("desk",kantor.getDesk());
+                next.putExtra("gambar",kantor.getImg());
+                next.putExtra("sms",kantor.getSms());
+                next.putExtra("mail",kantor.getMail());
+                next.putExtra("lat",kantor.getLat());
+                next.putExtra("lang",kantor.getLang());
+                next.putExtra("web",kantor.getWeb());
+                next.putExtra("tel",kantor.getTel());
+                startActivity(next);
+            }
+        });
+
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
+
     }
-});
-
-
-       searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-           @Override
-           public boolean onQueryTextSubmit(String query) {
-               return false;
-           }
-
-           @Override
-           public boolean onQueryTextChange(String newText) {
-
-               adapter.getFilter().filter(newText);
-               return false;
-           }
-       });
-
-
-        }
 
     public ArrayList<Kantor> getKantors(){
         Intent next = getIntent();
@@ -102,4 +96,4 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     }
 
 
-    }
+}
