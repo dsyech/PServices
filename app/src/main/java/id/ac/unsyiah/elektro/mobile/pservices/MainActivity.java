@@ -51,15 +51,15 @@ public class MainActivity extends AppCompatActivity {
                             int[] gambar = {R.drawable.rsudza, R.drawable.a, R.drawable.a, R.drawable.rsmala, R.drawable.rshb, R.drawable.a, R.drawable.a,
                                     R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a,
                                     R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:", "smsto:", "smsto:", "smsto:", "smsto:",
-                                    "smsto:", "smsto:", "smsto:", "smsto:", "smsto:",
-                                    "smsto:", "smsto:", "smsto:", "smsto:", "smsto:", "smsto:",
-                                    "smsto:"};
+                            String[]sms ={"-", "-", "-", "-", "-",
+                                    "-", "-", "-", "-", "-",
+                                    "-", "-", "-", "-", "-", "-",
+                                    "-"};
                             String[]mail ={"mailto:rsudza@acehprov.go.id", "mailto:rumahsakitim@yahoo.com", "mailto:rsjaceh2011@gmail.com",
                                     "mailto:rumahsakitmalahayati@yahoo.co.id", "mailto:rsharapanbunda181@gmail.com", "mailto:teungkufakinah.hospital@yahoo.com", "mailto:rsum@bandaacehkota.go.id",
-                                    "mailto:rsia@acehprov.go.id", "mailto:-", "mailto:bhayangkara_banda_aceh@yahoo.co.id", "mailto:ubudiyah_hospital@yahoo.com",
-                                    "mailto:-", "mailto:rsu_azzahra@yahoo.com", "mailto:-", "mailto:deydifitriady@yahoo.co.id",
-                                    "mailto:-", "mailto:-"};
+                                    "mailto:rsia@acehprov.go.id", "-", "mailto:bhayangkara_banda_aceh@yahoo.co.id", "mailto:ubudiyah_hospital@yahoo.com",
+                                    "-", "mailto:rsu_azzahra@yahoo.com", "-", "mailto:deydifitriady@yahoo.co.id",
+                                    "-", "-"};
 
                             double[] lat = {5.579462, 5.564446, 5.565996, 5.565996,
                                     5.565996, 5.565996, 5.565996, 5.565996,
@@ -104,17 +104,17 @@ public class MainActivity extends AppCompatActivity {
                                     "Jl. Lingkar Kampus, Rukoh, Syiah Kuala, Kota Banda Aceh, Aceh","Jl. Jurong Dagang, Sp. 7, Banda Aceh, Aceh, Indonesia"};
                             int[] gambar = {R.drawable.poldaaceh, R.drawable.poltabesbandaaceh, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a
                                     , R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a, R.drawable.a};
-                            String[]sms ={"smsto:08116771010","smsto:","smsto:","smsto","smsto:","smsto: ","smsto:","smsto:","smsto:",
-                                    "smsto:","smsto:"};
-                            String[]mail ={"mailto:resus.polda.aceh@gmail.com","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:","mailto:"
-                                    ,"mailto:","mailto:"};
+                            String[]sms ={"smsto:08116771010","-","-","-","-","-","-","-","-",
+                                    "-","-"};
+                            String[]mail ={"mailto:resus.polda.aceh@gmail.com","-","-","-","-","-","-","-","-"
+                                    ,"-","-"};
 
                             double[] lat = {5.578290, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996, 5.564446, 5.565996};
                             double []lang={95.348898, 95.325893, 95.336772, 95.325893, 95.336772, 95.325893, 95.336772, 95.325893, 95.336772, 95.325893, 95.336772};
 
-                            String []web = {"http://m.detik.com","http://vemale.com","http://okezone.com"};
-                            String[]tel = {"tel:06517555353","tel:065121353","tel:085359101995","tel:065121353","tel:085359101995","tel:065121353","tel:085359101995"
-                                    ,"tel:065121353","tel:085359101995","tel:065121353","tel:085359101995"};
+                            String []web = {"-","-","-","-","-","-","-","-","-","-","-"};
+                            String[]tel = {"tel:06517555353","tel:065121353","-","tel:065121353","-","tel:065121353","-"
+                                    ,"tel:065121353","-","tel:065121353","-"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
                             next.putExtra("gambar", gambar);
@@ -136,12 +136,12 @@ public class MainActivity extends AppCompatActivity {
                             String[] namaKantor = {"Kantor Pemadam Kebakaran"};
                             String[] desk = {"Lam Teumen Bara / Ketapang, Geuceu Meunara, Jaya Baru, Kota Banda Aceh, Aceh"};
                             int[] gambar = {R.drawable.damkarbanda};
-                            String[]sms ={"smsto:-"};
-                            String[]mail ={"mailto:dsyech@gmail.com","mailto:dsyech@gmail.com","mailto:dsyech@gmail.com"};
+                            String[]sms ={"-"};
+                            String[]mail ={"-"};
                             double[] lat = {5.525554};
                             double []lang={ 95.298144};
                             String []web = {"-"};
-                            String[]tel = {"tel:0651-44123"};
+                            String[]tel = {"tel:065144123"};
 
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
@@ -164,8 +164,8 @@ public class MainActivity extends AppCompatActivity {
                             String[] namaKantor = {"Kantor PMI Banda Aceh","Kantor Cabang PMI Nanggroe Aceh Darussalam"};
                             String[] desk = {"Jl. Stadion H. Dimoerthala No.2 di Banda Aceh - 23135","JL. Stadion H. Dimoerthala, No.4, Banda Aceh"};
                             int[] gambar = {R.drawable.pmi, R.drawable.pmi};
-                            String[]sms ={"smsto:-","smsto:-"};
-                            String[]mail ={"mailto:-","mailto:-"};
+                            String[]sms ={"-","-"};
+                            String[]mail ={"-","-"};
 
                             double[] lat = {5.563917,  5.563114};
                             double []lang={95.341517, 95.342899};
@@ -193,14 +193,14 @@ public class MainActivity extends AppCompatActivity {
                             String[] namaKantor = {"Perusahaan Listrik Negara (PLN). PT Persero - Wilayah Aceh", "PT. PLN (Persero) Area Banda Aceh"};
                             String[] desk = {"JL. Tengku H.Daud Beureu'eh, No. 172, Lampriet, Banda Aceh", "Jl. Tentara Pelajar, Merduati, Kuta Raja, Kota Banda Aceh, Aceh"};
                             int[] gambar = {R.drawable.e, R.drawable.e};
-                            String[]sms ={"smsto:-","smsto:-"};
-                            String[]mail ={"mailto:-","mailto:-"};
+                            String[]sms ={"-","-"};
+                            String[]mail ={"-","-"};
 
                             double[] lat = {5.567959, 5.556585};
                             double []lang={ 95.339679, 95.314879};
 
                             String []web = {"-","-"};
-                            String[]tel = {"tel:065122188","tel:-"};
+                            String[]tel = {"tel:065122188","-"};
                             next.putExtra("tel",tel);
                             next.putExtra("namaKantor", namaKantor);
                             next.putExtra("gambar", gambar);
