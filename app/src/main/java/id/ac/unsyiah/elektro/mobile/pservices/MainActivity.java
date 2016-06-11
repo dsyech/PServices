@@ -343,7 +343,7 @@ public class MainActivity extends AppCompatActivity {
                             String[] namaKantor = {"RSUD Kabupaten Aceh Besar", "RUMAH SAKIT AL ISLAMIC ACEH HOSPITAL","RUMAH SAKIT IBNU SINA"};
                             String[] desk = {"Jl. Banda Aceh-Medan KM.25 Sinyeu Indrapuri", "JL. Dr.Mr.Moch Hasan no. 88 desa Lampenerut",
                                     "Jalan Banda Aceh-Medan Km 25,5 Kecamatan Indrapuri, Kabupaten Aceh Besar"};
-                            int[] gambar = {R.drawable.rsudacehbesar, R.drawable.a, R.drawable.a};
+                            int[] gambar = {R.drawable.a, R.drawable.a, R.drawable.a};
                             String[]sms ={"-","-","-"};
                             String[]mail ={"mailto:rsud.acehbesar@gmail.com","mailto:al.islamichospital@gmail.com","mailto:rsibnusinaabes@gmail.com"};
 
